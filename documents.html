@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Project Optimal</title>
+    <link rel="stylesheet" href="css/en_default.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="site-wrapper">
+        <div id="news-toolbar">
+            <p id="news" class="p-news">This is alpha testing, there may be bugs still, if there is, please fill out the bug form.</p>
+            <div id="close-news-toolbar"><p>Close News</p></div>
+        </div>
+        <div id="maincontent">
+            <div id="side-toolbar" class="main-toolbar">
+                <div id="Dashboard">
+                    <i class="fa fa-tachometer"></i>
+                    <p>Dashboard</p>
+                </div>
+                <div id="Documents">
+                    <i class="fa fa-file-text"></i>
+                    <p>Documents</p>
+                </div>
+                <div id="Movies">
+                    <i class="fa fa-film"></i>
+                    <p>Movies</p>
+                </div>
+                <div id="Music">
+                    <i class="fa fa-music"></i>
+                    <p>Music</p>
+                </div>
+                <div id="Statistics">
+                    <i class="fa fa-bar-chart"></i>
+                    <p>Statistics</p>
+                </div>
+                <div id="Logout">
+                    <i class="fa fa-sign-out"></i>
+                    <p>Logout</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+$('#close-news-toolbar').click(function() {
+    $('#news-toolbar').hide();
+    $('close-news-toolbar').hide();
+});
+$(document).ready(function() {
+    $('#Dashboard').click(function() {
+        window.location.href = "dashboard.html"; 
+    });
+    $('#Documents').click(function() {
+        window.location.href = "documents.html"; 
+    });
+    $('#Movies').click(function() {
+        window.location.href = "movies.html"; 
+    });
+    $('#Music').click(function() {
+        window.location.href = "music.html"; 
+    });
+    $('#Statistics').click(function() {
+        window.location.href = "statistics.html"; 
+    });
+    $('#logout').click(function() {
+        logout();
+    });
+
+    function logout() {
+        //TODO LOGOUT
+    }
+});
+</script>
+</html>

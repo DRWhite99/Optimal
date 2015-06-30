@@ -1,0 +1,123 @@
+/* Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+/* Simple Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Body */
+
+body {
+  background: white;
+  color: #606468;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+}
+/* header label */
+.header-label {
+	position: fixed;
+	top: 30%;
+	-webkit-transform: translateY(-30%);
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+}
+.header-label p {
+	font-size: 2em;
+}
+/* Form Layout */
+
+.form-wrapper {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+  margin: 50px auto;
+  width: 280px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-item label {
+  background: #bdc3c7;
+  border-radius: 3px 0 0 3px;
+  color: #606468;
+  font-size: 1.4em;
+  float: left;
+  height: 22px;
+  padding: 14px 8px;
+  text-align: center;
+  width: 34px;
+}
+
+.form-item input {
+  border: none;
+  background: #ecf0f1;
+  color: #95a5a6;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.form-item input:focus {
+  outline: none;
+}
+
+.button-panel {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.button:hover {
+  background: #c0392b;
+}
+
+.form-item input,
+.button-panel .button {
+  border-radius: 0px
+}
+
+.reminder {
+  text-align: center;
+}
+
+.reminder a {
+  color: #2ecc71;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.reminder a:hover {
+  color: #27ae60;
+}
+#register-panel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+}
